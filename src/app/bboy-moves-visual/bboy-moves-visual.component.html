@@ -2,7 +2,7 @@
     <table>
         <tr>
             <td rowspan="4">
-                <div class="aligncontent">frogstand
+                <div class="aligncontent" (click)="openModal()">frogstand
                     <span class="stateline"></span>
                 </div>
             </td>
@@ -774,3 +774,23 @@
         </tr>
     </table>
 </div>
+
+<!-- Bootstrap Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="modal-title">Hi there!</h4>
+            <button type="button" class="btn-close" aria-label="Close" (click)="closeModal()"></button>
+        </div>
+        <div class="modal-body">
+            <img src="https://images.pexels.com/photos/8660213/pexels-photo-8660213.jpeg" class="w-100" alt=""/>
+            <iframe class="w-100" height="315" src="https://www.youtube.com/embed/Vy6LKYUjaP4?si=K8cxUy4oscvf1jpX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, quidem ipsam! Fugit maiores at accusantium dolorem. Omnis repellat reprehenderit, facere dolores sequi saepe harum, nobis cumque voluptas perferendis ab est.</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary"(click)="closeModal()">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
